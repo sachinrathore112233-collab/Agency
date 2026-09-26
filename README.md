@@ -1,221 +1,112 @@
-# 🚀 Codeyug Agency
+# CodeYug Agency 🚀
 
-A modern, full-featured agency website built with cutting-edge web technologies. This project showcases professional design, smooth animations, and responsive functionality perfect for creative and digital agencies.
+> **Transforming Ideas into Digital Experiences** — A full-service digital agency offering Website Development, App Development, SEO, UI/UX Design, and Branding.
 
-## ✨ Features
+---
 
-- **Modern Design**: Clean and professional UI/UX with beautiful animations
-- **Responsive Layout**: Fully responsive design that works on all devices
-- **Smooth Animations**: Engaging motion effects using Framer Motion and GSAP
-- **TypeScript Support**: Full TypeScript support for type safety
-- **Tailwind CSS**: Utility-first CSS framework for rapid styling
-- **Next.js Framework**: Built with Next.js 14 for optimal performance
-- **SEO Optimized**: Server-side rendering for better SEO
-- **Testing Ready**: Configured with Vitest for comprehensive testing
-- **Dark Mode Support**: Beautiful dark mode implementation
+## 🌐 Overview
+
+CodeYug Agency is a modern SaaS-style agency website that showcases our end-to-end digital services. Built with cutting-edge technologies and stunning animations, the platform is designed to convert visitors into clients through exceptional UX and compelling storytelling.
+
+---
+
+## ✨ Services
+
+| Service | Description |
+|---|---|
+| 🖥️ **Website Development** | Custom, high-performance websites tailored to your brand |
+| 📱 **App Development** | Cross-platform mobile & web apps using modern frameworks |
+| 🔍 **SEO** | Data-driven strategies to rank higher and grow organic traffic |
+| 🎨 **UI/UX Design** | User-centered designs that delight and convert |
+| 🏷️ **Branding** | Identity systems, logos, and brand guidelines that stand out |
+
+---
 
 ## 🛠️ Tech Stack
 
-### Frontend Framework
-- **Next.js** (v14.2.15) - React framework for production
-- **React** (v18) - UI library
-- **TypeScript** (v5) - Type-safe JavaScript
+| Layer | Technology |
+|---|---|
+| **Framework** | [Next.js 14](https://nextjs.org/) (App Router) |
+| **Styling** | [Tailwind CSS](https://tailwindcss.com/) |
+| **Animations** | [Framer Motion](https://www.framer.com/motion/) + [GSAP](https://gsap.com/) |
+| **Icons** | [Lucide React](https://lucide.dev/) / [Heroicons](https://heroicons.com/) |
+| **Font** | Inter + Clash Display |
+| **Deployment** | [Vercel](https://vercel.com/) |
 
-### Styling & Animation
-- **Tailwind CSS** (v3.4.1) - Utility-first CSS framework
-- **Framer Motion** (v11.3.8) - Motion library for React
-- **GSAP** (v3.12.5) - Professional animation library
-- **Lucide React** (v0.427.0) - Beautiful icon library
-
-### Development Tools
-- **ESLint** (v8) - Code quality and linting
-- **Vitest** (v3.2.7) - Unit testing framework
-- **PostCSS** (v8) - CSS transformations
-- **Autoprefixer** (v10.0.1) - CSS vendor prefixes
-
-### Utilities
-- **clsx** (v2.1.1) - Conditional CSS classnames
-- **tailwind-merge** (v2.5.2) - Merge Tailwind CSS classes intelligently
-
-## 📋 Prerequisites
-
-- Node.js >= 18.17.0
-- npm >= 8.0.0 or yarn
+---
 
 ## 🚀 Getting Started
 
+### Prerequisites
+
+- Node.js 18+
+- npm / yarn / pnpm
+
 ### Installation
 
-1. **Clone the repository**
 ```bash
-git clone https://github.com/sachinrathore112233-collab/Agency.git
-cd Agency
-```
+# Clone the repository
+git clone https://github.com/codeyug/agency.git
+cd agency
 
-2. **Install dependencies**
-```bash
+# Install dependencies
 npm install
-# or
-yarn install
-```
 
-3. **Set up environment variables** (if needed)
-```bash
-cp .env.example .env.local
-```
-
-### Development
-
-Start the development server:
-```bash
+# Start development server
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Building for Production
-
-Build the application:
-```bash
-npm run build
-```
-
-Start the production server:
-```bash
-npm start
-```
-
-## 📦 Available Scripts
-
-```bash
-# Development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Start production server
-npm start
-
-# Run linting
-npm run lint
-
-# Run tests
-npm test
-
-# Run tests in watch mode
-npm run test:watch
-
-# Generate coverage report
-npm run test:coverage
-```
+---
 
 ## 📁 Project Structure
 
 ```
-Agency/
-├── public/              # Static assets
-├── src/
-│   ├── app/            # Next.js app directory
-│   ├── components/     # Reusable React components
-│   ├── pages/          # Page components
-│   ├── styles/         # Global styles
-│   └── utils/          # Utility functions
-├── package.json        # Project dependencies
-├── tsconfig.json       # TypeScript configuration
-├── tailwind.config.js  # Tailwind CSS configuration
-├── postcss.config.js   # PostCSS configuration
-└── README.md          # This file
+agency/
+├── app/                    # Next.js App Router pages
+│   ├── layout.tsx          # Root layout
+│   ├── page.tsx            # Home page
+│   ├── services/           # Services pages
+│   ├── portfolio/          # Portfolio/work showcase
+│   ├── about/              # About us page
+│   └── contact/            # Contact page
+├── components/             # Reusable UI components
+│   ├── ui/                 # Base UI primitives
+│   ├── sections/           # Page sections
+│   └── shared/             # Shared layout components
+├── lib/                    # Utility functions
+├── public/                 # Static assets
+├── styles/                 # Global styles
+└── docs/                   # Project documentation
 ```
-
-## 🎨 Customization
-
-### Tailwind CSS
-Customize colors, fonts, and spacing in `tailwind.config.js`
-
-### Animations
-Adjust animation timings and effects in component files using Framer Motion and GSAP
-
-### Icons
-Use Lucide React icons from the icon library - [Browse Icons](https://lucide.dev/)
-
-## ✅ Testing
-
-Run the test suite:
-```bash
-npm test
-```
-
-Run tests in watch mode:
-```bash
-npm run test:watch
-```
-
-Generate coverage report:
-```bash
-npm run test:coverage
-```
-
-## 🔒 Type Safety
-
-This project uses TypeScript for full type safety. All files should have proper type annotations.
-
-## 🌐 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## 📊 Performance
-
-- **Lighthouse Score**: Optimized for performance
-- **Core Web Vitals**: Meets Google's Core Web Vitals standards
-- **Bundle Size**: Optimized with Next.js automatic code splitting
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 👤 Author
-
-**Sachin Rathore**
-- GitHub: [@sachinrathore112233-collab](https://github.com/sachinrathore112233-collab)
-
-## 📧 Support
-
-For support, email support@codeyug.com or open an issue on GitHub.
-
-## 🎯 Roadmap
-
-- [ ] Add multi-language support
-- [ ] Implement CMS integration
-- [ ] Add blog functionality
-- [ ] Performance monitoring
-- [ ] Advanced analytics
-- [ ] A/B testing framework
-
-## 🙌 Acknowledgments
-
-- Next.js team for the amazing framework
-- Tailwind CSS for utility-first CSS
-- Framer Motion for smooth animations
-- All contributors and supporters
 
 ---
 
-**Made with ❤️ by the Codeyug Team**
+## 📖 Documentation
 
-Last updated: 2026-09-26
+| Doc | Description |
+|---|---|
+| [PRD](./docs/PRD.md) | Product Requirements Document |
+| [Design](./docs/DESIGN.md) | Design system and visual language |
+| [UI Requirements](./docs/UI-REQUIREMENTS.md) | UI component specifications |
+| [Architecture](./docs/ARCHITECTURE.md) | Technical architecture |
+| [Flow](./docs/FLOW.md) | User flows and journeys |
+| [Components](./docs/COMPONENTS.md) | Component library reference |
+| [Responsive](./docs/RESPONSIVE.md) | Responsive design guidelines |
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repo
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+© 2025 CodeYug Agency. All rights reserved.
