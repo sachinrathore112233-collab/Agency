@@ -52,7 +52,7 @@ export default function FoundersSection() {
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-2">
             <span className="font-hand text-3xl text-artsy-yellow tracking-wide">
-              meet the minds behind CodeYug!
+              meet the minds behind Wixgo!
             </span>
             <svg viewBox="0 0 64 12" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" className="h-3 w-16 text-artsy-yellow">
               <path d="M3 4c18-3 40-3 58 0" />
@@ -65,7 +65,7 @@ export default function FoundersSection() {
           </h2>
 
           <p className="text-brand-muted text-base sm:text-lg leading-relaxed">
-            No middle managers. No generic templates. When you work with CodeYug, you partner directly with experienced entrepreneurs who care about your product as much as you do.
+            No middle managers. No generic templates. When you work with Wixgo, you partner directly with experienced entrepreneurs who care about your product as much as you do.
           </p>
         </div>
 
@@ -181,7 +181,7 @@ export default function FoundersSection() {
               &ldquo;We don&apos;t just deliver code — we deliver an unfair competitive advantage for your brand.&rdquo;
             </p>
             <p className="font-mono text-xs font-bold uppercase tracking-wider mt-2 opacity-80">
-              — Sachin Rathore & Atharv Vyas, CodeYug Agency
+              — Sachin Rathore & Atharv Vyas, Wixgo Agency
             </p>
           </div>
         </div>

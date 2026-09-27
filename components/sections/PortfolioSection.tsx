@@ -207,7 +207,7 @@ export default function PortfolioSection() {
 
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-4 sm:p-5">
                       <span className="font-mono text-[10px] sm:text-xs font-bold uppercase tracking-wider text-white bg-black/70 backdrop-blur-sm px-2.5 py-1 rounded-lg border border-white/20">
-                        Engineered by CodeYug
+                        Engineered by Wixgo
                       </span>
                     </div>
                   </div>

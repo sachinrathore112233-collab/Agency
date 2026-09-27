@@ -1,5 +1,5 @@
 # Design System
-## CodeYug Agency
+## Wixgo Agency
 
 **Version:** 1.0  
 **Status:** Active
@@ -8,7 +8,7 @@
 
 ## 1. Design Philosophy
 
-CodeYug Agency's visual identity is built on three principles:
+Wixgo Agency's visual identity is built on three principles:
 
 | Principle | Description |
 |---|---|

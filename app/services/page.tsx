@@ -7,7 +7,7 @@ import CTABanner from "@/components/sections/CTABanner";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Explore CodeYug Agency's full range of digital services — Website Development, App Development, SEO, UI/UX Design, and Branding.",
+    "Explore Wixgo Agency's full range of digital services — Website Development, App Development, SEO, UI/UX Design, and Branding.",
 };
 
 export default function ServicesPage() {

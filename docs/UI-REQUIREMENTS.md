@@ -1,5 +1,5 @@
 # UI Requirements
-## CodeYug Agency
+## Wixgo Agency
 
 **Version:** 1.0
 
@@ -224,7 +224,7 @@ Left Column (50%):    Right Column (50%):
 │            Service 2   Work 2       Contact    Terms  │
 │                                                       │
 │  ─────────────────────────────────────────────────   │
-│  © 2025 CodeYug Agency    [LinkedIn][Twitter][IG]    │
+│  © 2025 Wixgo Agency    [LinkedIn][Twitter][IG]    │
 └──────────────────────────────────────────────────────┘
 ```
 

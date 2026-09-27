@@ -87,7 +87,7 @@ export default function HeroSection() {
             className="relative inline-block border-[3.5px] border-artsy-yellow px-6 py-2 sm:px-12 sm:py-3 bg-brand-darker/60 backdrop-blur-sm shadow-[6px_6px_0px_#FFE81D]"
           >
             <h1 className="text-6xl sm:text-8xl lg:text-[7.5rem] font-extrabold tracking-tight text-white font-space leading-none select-none">
-              CODE<span className="text-gradient-artsy">YUG</span>
+              WIX<span className="text-gradient-artsy">GO</span>
             </h1>
           </motion.div>
 

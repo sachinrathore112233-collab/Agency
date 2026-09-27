@@ -1,4 +1,4 @@
-# CodeYug Agency 🚀
+# Wixgo Agency 🚀
 
 > **Transforming Ideas into Digital Experiences** — A full-service digital agency offering Website Development, App Development, SEO, UI/UX Design, and Branding.
 
@@ -6,7 +6,7 @@
 
 ## 🌐 Overview
 
-CodeYug Agency is a modern SaaS-style agency website that showcases our end-to-end digital services. Built with cutting-edge technologies and stunning animations, the platform is designed to convert visitors into clients through exceptional UX and compelling storytelling.
+Wixgo Agency is a modern SaaS-style agency website that showcases our end-to-end digital services. Built with cutting-edge technologies and stunning animations, the platform is designed to convert visitors into clients through exceptional UX and compelling storytelling.
 
 ---
 
@@ -46,7 +46,7 @@ CodeYug Agency is a modern SaaS-style agency website that showcases our end-to-e
 
 ```bash
 # Clone the repository
-git clone https://github.com/codeyug/agency.git
+git clone https://github.com/wixgo/agency.git
 cd agency
 
 # Install dependencies
@@ -109,4 +109,4 @@ agency/
 
 ## 📄 License
 
-© 2025 CodeYug Agency. All rights reserved.
+© 2025 Wixgo Agency. All rights reserved.

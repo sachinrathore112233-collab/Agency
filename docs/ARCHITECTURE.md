@@ -1,5 +1,5 @@
 # Technical Architecture
-## CodeYug Agency
+## Wixgo Agency
 
 **Version:** 1.0  
 **Stack:** Next.js 14 + Tailwind CSS + Framer Motion + GSAP
@@ -8,7 +8,7 @@
 
 ## 1. Overview
 
-CodeYug Agency is a **static-first, client-side-animated** website built with Next.js App Router. There is no backend, no database, and no API — all content is hardcoded or sourced from local data files.
+Wixgo Agency is a **static-first, client-side-animated** website built with Next.js App Router. There is no backend, no database, and no API — all content is hardcoded or sourced from local data files.
 
 ```
 ┌─────────────────────────────────────────────────┐
@@ -175,7 +175,7 @@ export const staggerContainer = {
 ```tsx
 // app/layout.tsx — Base metadata
 export const metadata: Metadata = {
-  title: { template: '%s | CodeYug Agency', default: 'CodeYug Agency' },
+  title: { template: '%s | Wixgo Agency', default: 'Wixgo Agency' },
   description: 'Premium web development, app development, SEO, UI/UX & branding agency',
   openGraph: { ... },
   twitter: { card: 'summary_large_image' },
@@ -199,7 +199,7 @@ Developer → Push to GitHub
   → Runs: npm run build
   → Generates: Static HTML + JS bundles
   → Deploys to: Vercel Edge Network (CDN)
-  → Live at: codeyug.agency (custom domain)
+  → Live at: wixgo.agency (custom domain)
 ```
 
 ---
@@ -208,7 +208,7 @@ Developer → Push to GitHub
 
 ```bash
 # .env.local (if needed for contact form)
-NEXT_PUBLIC_SITE_URL=https://codeyug.agency
-NEXT_PUBLIC_CONTACT_EMAIL=hello@codeyug.agency
+NEXT_PUBLIC_SITE_URL=https://wixgo.agency
+NEXT_PUBLIC_CONTACT_EMAIL=hello@wixgo.agency
 # (No database or backend credentials needed)
 ```

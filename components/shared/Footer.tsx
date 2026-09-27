@@ -50,7 +50,7 @@ export default function Footer() {
                 <Zap className="w-4 h-4 fill-current" />
               </div>
               <span className="text-xl font-black font-space text-white">
-                CODE<span className="text-artsy-yellow">YUG</span>
+                WIX<span className="text-artsy-yellow">GO</span>
               </span>
             </div>
             <p className="text-xs text-brand-muted leading-relaxed">
@@ -126,7 +126,7 @@ export default function Footer() {
             <ul className="space-y-2.5 text-xs text-brand-muted">
               <li className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-artsy-yellow" />
-                hello@codeyug.agency
+                hello@wixgo.agency
               </li>
               <li>
                 <a
@@ -155,14 +155,14 @@ export default function Footer() {
               textShadow: "0 0 60px rgba(124, 58, 237, 0.15)",
             }}
           >
-            codeyug
+            wixgo
           </p>
         </div>
 
         {/* Bottom Credits */}
         <div className="pt-6 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-brand-muted">
           <p>
-            © {new Date().getFullYear()} CodeYug Agency. Co-founded by Sachin Rathore & Atharv Vyas.
+            © {new Date().getFullYear()} Wixgo Agency. Co-founded by Sachin Rathore & Atharv Vyas.
           </p>
           <div className="flex items-center gap-6">
             <a href="#founders" className="hover:text-white transition-colors">About Us</a>

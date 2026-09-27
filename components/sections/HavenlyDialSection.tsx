@@ -151,7 +151,7 @@ export default function HavenlyDialSection() {
         <div className="text-center max-w-3xl mx-auto space-y-6 pt-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/15 bg-white/[0.04] text-xs font-mono font-semibold uppercase tracking-widest text-brand-muted">
             <span className="w-2 h-2 rounded-full bg-artsy-yellow animate-pulse" />
-            ABOUT CODEYUG
+            ABOUT WIXGO
           </div>
 
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white font-space leading-tight">

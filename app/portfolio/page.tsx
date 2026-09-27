@@ -5,7 +5,7 @@ import CTABanner from "@/components/sections/CTABanner";
 export const metadata: Metadata = {
   title: "Portfolio",
   description:
-    "Explore CodeYug Agency's portfolio — stunning websites, mobile apps, SEO campaigns, and brand identities we've built for our clients.",
+    "Explore Wixgo Agency's portfolio — stunning websites, mobile apps, SEO campaigns, and brand identities we've built for our clients.",
 };
 
 export default function PortfolioPage() {

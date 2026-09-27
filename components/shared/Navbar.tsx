@@ -43,7 +43,7 @@ export default function Navbar() {
               </div>
               <div className="flex flex-col">
                 <span className="text-lg sm:text-2xl font-black tracking-tight font-space text-artsy-ink dark:text-white leading-none">
-                  CODE<span className="text-artsy-yellow">YUG</span>
+                  WIX<span className="text-artsy-yellow">GO</span>
                 </span>
                 <span className="text-[9px] font-mono uppercase tracking-widest text-brand-darkMuted dark:text-brand-muted">
                   Digital Studio
@@ -74,7 +74,9 @@ export default function Navbar() {
 
               {/* Action Button - Always crisp and high contrast */}
               <a
-                href="#contact"
+                href="https://wa.me/919179668341?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20project"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-artsy-ink text-white dark:bg-white dark:text-artsy-ink text-xs font-mono font-bold uppercase tracking-widest hover:bg-artsy-yellow hover:text-artsy-ink dark:hover:bg-artsy-yellow dark:hover:text-artsy-ink hover:scale-105 transition-all shadow-brutal-sm"
               >
                 Let&apos;s Talk

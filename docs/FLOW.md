@@ -1,5 +1,5 @@
 # User Flow Documentation
-## CodeYug Agency
+## Wixgo Agency
 
 **Version:** 1.0
 
@@ -7,7 +7,7 @@
 
 ## 1. Overview
 
-This document maps every key user journey through the CodeYug Agency website — from first visit to lead conversion.
+This document maps every key user journey through the Wixgo Agency website — from first visit to lead conversion.
 
 ---
 

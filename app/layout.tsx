@@ -24,11 +24,11 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | CodeYug Agency",
-    default: "CodeYug Agency — Creative Digital & SaaS Product Studio",
+    template: "%s | Wixgo Agency",
+    default: "Wixgo Agency — Creative Digital & SaaS Product Studio",
   },
   description:
-    "Founded by Sachin Rathore & Atharv Vyas. CodeYug Agency delivers cutting-edge Website Development, SaaS Products, App Development, SEO, UI/UX Design, and Brand Identity.",
+    "Founded by Sachin Rathore & Atharv Vyas. Wixgo Agency delivers cutting-edge Website Development, SaaS Products, App Development, SEO, UI/UX Design, and Brand Identity.",
   keywords: [
     "web development",
     "SaaS product development",
@@ -39,20 +39,20 @@ export const metadata: Metadata = {
     "digital agency",
     "Sachin Rathore",
     "Atharv Vyas",
-    "CodeYug",
+    "Wixgo",
   ],
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://codeyug.agency",
-    siteName: "CodeYug Agency",
-    title: "CodeYug Agency — Creative Digital & SaaS Product Studio",
+    url: "https://wixgo.agency",
+    siteName: "Wixgo Agency",
+    title: "Wixgo Agency — Creative Digital & SaaS Product Studio",
     description:
       "Crafted by Sachin Rathore & Atharv Vyas. High-impact websites, apps, SaaS products, SEO & branding.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "CodeYug Agency — Creative Digital & SaaS Studio",
+    title: "Wixgo Agency — Creative Digital & SaaS Studio",
     description:
       "Transform your digital presence with world-class web development, apps, SaaS products, SEO, UI/UX & branding.",
   },

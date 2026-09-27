@@ -30,7 +30,7 @@ const reviews = [
     name: "Karen McSwain",
     company: "Marketing Director, Nova Tech",
     title: "10/10 ROI on our Rebrand & SEO",
-    text: "Our organic leads tripled within 90 days of CodeYug delivering our new website. They are transparent, extremely creative, and treat your business like their own.",
+    text: "Our organic leads tripled within 90 days of Wixgo delivering our new website. They are transparent, extremely creative, and treat your business like their own.",
     rating: "5/5",
     bgColor: "bg-artsy-lime text-artsy-ink",
     rotation: "-rotate-1 sm:-rotate-2 hover:rotate-0",
@@ -41,7 +41,7 @@ const reviews = [
     name: "Devika Sen",
     company: "Founder, EduBridge App",
     title: "Unfair Advantage for Startups",
-    text: "Working directly with the founders instead of account managers changed everything. CodeYug is the dream partner for any founder who wants to ship fast and look like a billion-dollar brand.",
+    text: "Working directly with the founders instead of account managers changed everything. Wixgo is the dream partner for any founder who wants to ship fast and look like a billion-dollar brand.",
     rating: "5/5",
     bgColor: "bg-artsy-yellow-soft text-artsy-ink",
     rotation: "rotate-1 sm:rotate-2 hover:rotate-0",
@@ -74,7 +74,7 @@ export default function TestimonialsSection() {
           </h2>
 
           <p className="text-brand-muted text-base sm:text-lg max-w-xl mx-auto">
-            Honest words from founders, CTOs, and marketing leads who built with CodeYug.
+            Honest words from founders, CTOs, and marketing leads who built with Wixgo.
           </p>
         </div>
 

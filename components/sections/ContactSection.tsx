@@ -92,7 +92,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="text-xs text-brand-muted">Email Us</p>
-                    <p className="font-mono font-semibold">hello@codeyug.agency</p>
+                    <p className="font-mono font-semibold">hello@wixgo.agency</p>
                   </div>
                 </div>
 

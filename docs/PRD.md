@@ -1,5 +1,5 @@
 # Product Requirements Document (PRD)
-## CodeYug Agency Website
+## Wixgo Agency Website
 
 **Version:** 1.0  
 **Date:** September 2025  
@@ -9,7 +9,7 @@
 
 ## 1. Executive Summary
 
-CodeYug Agency is a premium digital agency website designed to attract, engage, and convert potential clients seeking website development, app development, SEO, UI/UX design, and branding services. The platform functions as both a marketing site and a portfolio showcase — demonstrating technical excellence through its own design and performance.
+Wixgo Agency is a premium digital agency website designed to attract, engage, and convert potential clients seeking website development, app development, SEO, UI/UX design, and branding services. The platform functions as both a marketing site and a portfolio showcase — demonstrating technical excellence through its own design and performance.
 
 ---
 
@@ -21,7 +21,7 @@ Digital agencies struggle to differentiate themselves in a crowded market. Most 
 - Lacking clear service differentiation
 - Failing to build trust through social proof
 
-**CodeYug Agency** solves this by being the product itself — a blazing-fast, visually stunning, conversion-optimized website.
+**Wixgo Agency** solves this by being the product itself — a blazing-fast, visually stunning, conversion-optimized website.
 
 ---
 
@@ -29,12 +29,12 @@ Digital agencies struggle to differentiate themselves in a crowded market. Most 
 
 ### Business Goals
 - 📈 Increase qualified leads by **40%** within 6 months of launch
-- 🏆 Position CodeYug as a **premium agency** (not a budget option)
+- 🏆 Position Wixgo as a **premium agency** (not a budget option)
 - 🌍 Expand reach to **international clients**
 - 📊 Achieve **< 3 second** page load time (LCP)
 
 ### User Goals
-- Quickly understand CodeYug's services and value proposition
+- Quickly understand Wixgo's services and value proposition
 - See proof of quality through portfolio and case studies
 - Easily contact or initiate a project discussion
 - Build trust through testimonials and process transparency
@@ -94,7 +94,7 @@ Digital agencies struggle to differentiate themselves in a crowded market. Most 
 - **Priority:** P1
 - Agency story and mission statement
 - Team member cards with photos, roles, and social links
-- "Why CodeYug" differentiators
+- "Why Wixgo" differentiators
 
 ### 5.6 Testimonials
 - **Priority:** P1

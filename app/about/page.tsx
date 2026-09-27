@@ -8,7 +8,7 @@ import CTABanner from "@/components/sections/CTABanner";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about CodeYug Agency — founded by Sachin Rathore & Atharv Vyas. We build world-class websites, apps, SaaS products, SEO growth, and iconic brands.",
+    "Learn about Wixgo Agency — founded by Sachin Rathore & Atharv Vyas. We build world-class websites, apps, SaaS products, SEO growth, and iconic brands.",
 };
 
 const values = [
@@ -66,7 +66,7 @@ export default function AboutPage() {
               </h1>
 
               <p className="text-brand-muted text-base sm:text-lg leading-relaxed">
-                CodeYug Agency was founded by <strong className="text-white">Sachin Rathore</strong> (Creative Idea Developer & Entrepreneur) and <strong className="text-white">Atharv Vyas</strong> (Full-Stack Developer & Entrepreneur) to disrupt standard agency mediocrity.
+                Wixgo Agency was founded by <strong className="text-white">Sachin Rathore</strong> (Creative Idea Developer & Entrepreneur) and <strong className="text-white">Atharv Vyas</strong> (Full-Stack Developer & Entrepreneur) to disrupt standard agency mediocrity.
               </p>
 
               <p className="text-brand-muted text-sm sm:text-base leading-relaxed">

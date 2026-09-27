@@ -1,5 +1,5 @@
 # Component Library Reference
-## CodeYug Agency
+## Wixgo Agency
 
 **Version:** 1.0
 
@@ -276,7 +276,7 @@ Animated process timeline.
 **Contains:**
 - Agency story text
 - Team member grid (`TeamMemberCard`)
-- "Why CodeYug" feature highlights
+- "Why Wixgo" feature highlights
 
 #### `TeamMemberCard`
 ```ts

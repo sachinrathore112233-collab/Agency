@@ -1,5 +1,5 @@
 # Responsive Design Guidelines
-## CodeYug Agency
+## Wixgo Agency
 
 **Version:** 1.0
 

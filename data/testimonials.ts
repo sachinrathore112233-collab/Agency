@@ -3,7 +3,7 @@ export const testimonials = [
   {
     id: "1",
     quote:
-      "CodeYug transformed our outdated website into a stunning, high-performing platform. Our leads doubled within 2 months of launch. Absolutely incredible work!",
+      "Wixgo transformed our outdated website into a stunning, high-performing platform. Our leads doubled within 2 months of launch. Absolutely incredible work!",
     name: "Rahul Sharma",
     role: "Founder & CEO",
     company: "TechNova Solutions",
@@ -13,7 +13,7 @@ export const testimonials = [
   {
     id: "2",
     quote:
-      "The UI/UX team at CodeYug truly understands user behavior. Our app's retention rate went from 30% to 72% after their redesign. Worth every rupee!",
+      "The UI/UX team at Wixgo truly understands user behavior. Our app's retention rate went from 30% to 72% after their redesign. Worth every rupee!",
     name: "Priya Mehta",
     role: "Product Manager",
     company: "HealthBridge App",
@@ -23,7 +23,7 @@ export const testimonials = [
   {
     id: "3",
     quote:
-      "Our SEO campaign with CodeYug was a game changer. We went from page 8 to ranking #1 for our main keywords in just 4 months. Exceptional team!",
+      "Our SEO campaign with Wixgo was a game changer. We went from page 8 to ranking #1 for our main keywords in just 4 months. Exceptional team!",
     name: "Arjun Kapoor",
     role: "Marketing Director",
     company: "EduLearn India",
@@ -43,7 +43,7 @@ export const testimonials = [
   {
     id: "5",
     quote:
-      "We hired CodeYug for our React Native app and they delivered beyond expectations. Smooth animations, clean code, and shipped on time. Highly recommend!",
+      "We hired Wixgo for our React Native app and they delivered beyond expectations. Smooth animations, clean code, and shipped on time. Highly recommend!",
     name: "Vikram Nair",
     role: "CTO",
     company: "LogiTrack Pro",
