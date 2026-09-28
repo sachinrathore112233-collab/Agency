@@ -1,33 +1,19 @@
 import type { MetadataRoute } from "next";
+import { services } from "@/data/services";
 import { siteConfig } from "@/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date();
-
-  return [
-    {
-      url: siteConfig.url,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 1,
-    },
-    {
-      url: `${siteConfig.url}/services`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${siteConfig.url}/portfolio`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${siteConfig.url}/about`,
-      lastModified,
-      changeFrequency: "yearly",
-      priority: 0.7,
-    },
+  const routes = [
+    { pathname: "/", priority: 1 },
+    { pathname: "/services", priority: 0.9 },
+    ...services.map((service) => ({ pathname: service.href, priority: 0.8 })),
+    { pathname: "/portfolio", priority: 0.8 },
+    { pathname: "/about", priority: 0.7 },
   ];
+
+  return routes.map(({ pathname, priority }) => ({
+    url: new URL(pathname, siteConfig.url).toString(),
+    changeFrequency: "monthly",
+    priority,
+  }));
 }

@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 
 export const siteConfig = {
   name: "Wixgo Agency",
+  title: "Wixgo Agency | Website Development, Apps & SEO",
   url: "https://wixgo.agency",
+  language: "en-IN",
   description:
-    "Wixgo Agency builds high-performance websites, mobile apps, SEO strategies, UI/UX designs, and distinctive brand identities for modern businesses.",
-  ogImage: "/og-image.png",
+    "Wixgo Agency builds custom websites, web and mobile apps, and SaaS products, with SEO, UI/UX design, and branding for businesses.",
+  email: "hello@wixgo.agency",
+  telephone: "+91 91796 68341",
+  ogImage: "/images/founders/sachin-rathore.png",
 };
 
 export function createPageMetadata({
@@ -33,9 +37,7 @@ export function createPageMetadata({
       images: [
         {
           url: siteConfig.ogImage,
-          width: 1200,
-          height: 630,
-          alt: "Wixgo Agency — Transforming Ideas into Digital Experiences",
+          alt: "Sachin Rathore, Wixgo Agency co-founder",
         },
       ],
     },

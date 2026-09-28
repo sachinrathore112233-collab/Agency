@@ -7,6 +7,7 @@ import { Monitor, Smartphone, TrendingUp, Palette, Zap, ArrowUpRight, Check, Cod
 const agencyServices = [
   {
     number: "01",
+    href: "/services/web-development",
     title: "Website Development",
     subtitle: "High-Performance Next.js Architectures",
     description: "Custom-tailored, lightning-fast web applications designed for conversion. We code with Next.js, TypeScript, Tailwind, and GSAP for flawless responsiveness and 99+ Core Web Vitals.",
@@ -18,6 +19,7 @@ const agencyServices = [
   },
   {
     number: "02",
+    href: "/services/saas-product-engineering",
     title: "SaaS Product Engineering",
     subtitle: "Full-Stack Web Apps Built to Scale",
     description: "End-to-end SaaS engineering from schema design to frontend state. We build dashboards, auth systems, subscription billing, and real-time APIs that can scale to millions.",
@@ -29,6 +31,7 @@ const agencyServices = [
   },
   {
     number: "03",
+    href: "/services/app-development",
     title: "Mobile App Development",
     subtitle: "iOS & Android Cross-Platform Apps",
     description: "Production-ready mobile applications built with React Native. Delivering true 60fps animations, intuitive native gestures, offline capabilities, and App Store submission.",
@@ -40,6 +43,7 @@ const agencyServices = [
   },
   {
     number: "04",
+    href: "/services/ui-ux",
     title: "UI/UX & Interaction Design",
     subtitle: "User-Centered Interfaces that Delight",
     description: "Pixel-perfect visual experiences crafted from deep user research. We build comprehensive Figma design systems, wireframes, and interactive prototypes that eliminate user friction.",
@@ -51,6 +55,7 @@ const agencyServices = [
   },
   {
     number: "05",
+    href: "/services/seo",
     title: "SEO & Growth Engine",
     subtitle: "Dominate Search & Drive Organic Leads",
     description: "Data-driven SEO strategies built directly into your website's architecture. We fix technical bottlenecks, structure programmatic data, and optimize for top Google rankings.",
@@ -62,6 +67,7 @@ const agencyServices = [
   },
   {
     number: "06",
+    href: "/services/branding",
     title: "Brand Identity Systems",
     subtitle: "Unforgettable Brand Presence",
     description: "Complete identity systems that distinguish your company from the competition — memorable logo marks, color psychology, custom typography, and complete brand rulebooks.",
@@ -148,13 +154,20 @@ export default function ServicesSection() {
               </div>
 
               {/* Bottom Action */}
-              <div className="pt-4 border-t border-white/[0.08]">
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-3 pt-4 border-t border-white/[0.08]">
                 <Link
-                  href="/#contact"
+                  href={srv.href}
                   className="font-mono inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-white group-hover:text-artsy-yellow transition-colors"
                 >
-                  Start with this service
+                  Explore this service
                   <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                </Link>
+                <Link
+                  href="/#contact"
+                  className="font-mono inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-muted hover:text-artsy-yellow transition-colors"
+                >
+                  Start a project
+                  <ArrowUpRight className="w-4 h-4" />
                 </Link>
               </div>
             </motion.div>

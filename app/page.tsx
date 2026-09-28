@@ -14,12 +14,24 @@ const organizationSchema = {
   name: siteConfig.name,
   url: siteConfig.url,
   description: siteConfig.description,
+  founder: [
+    {
+      "@type": "Person",
+      name: "Sachin Rathore",
+      sameAs: "https://www.linkedin.com/in/sachinrathore123/",
+    },
+    {
+      "@type": "Person",
+      name: "Atharv Vyas",
+      sameAs: "https://www.linkedin.com/in/atharv-vyas-a95347231/",
+    },
+  ],
   contactPoint: [
     {
       "@type": "ContactPoint",
       contactType: "customer support",
-      email: "hello@wixgo.agency",
-      telephone: "+919179668341",
+      email: siteConfig.email,
+      telephone: siteConfig.telephone,
     },
   ],
 };
@@ -30,7 +42,7 @@ const websiteSchema = {
   "@id": `${siteConfig.url}/#website`,
   name: siteConfig.name,
   url: siteConfig.url,
-  inLanguage: "en",
+  inLanguage: siteConfig.language,
   publisher: { "@id": `${siteConfig.url}/#organization` },
 };
 

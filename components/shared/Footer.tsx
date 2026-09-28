@@ -3,6 +3,15 @@
 import Link from "next/link";
 import { Zap, ArrowUpRight, Github, Linkedin, Twitter, Mail, Phone, MapPin, Heart } from "lucide-react";
 
+const serviceLinks = [
+  { label: "Website Development", href: "/services/web-development" },
+  { label: "SaaS Product Engineering", href: "/services/saas-product-engineering" },
+  { label: "App Development", href: "/services/app-development" },
+  { label: "UI/UX Design", href: "/services/ui-ux" },
+  { label: "SEO Services", href: "/services/seo" },
+  { label: "Branding", href: "/services/branding" },
+];
+
 export default function Footer() {
   return (
     <footer className="relative bg-brand-darker border-t border-white/[0.08] overflow-hidden pt-20 pb-12">
@@ -74,12 +83,13 @@ export default function Footer() {
               Services
             </h3>
             <ul className="space-y-2.5 text-xs text-brand-muted">
-              <li><a href="/#services" className="hover:text-artsy-yellow transition-colors">Website Development</a></li>
-              <li><a href="/#services" className="hover:text-artsy-yellow transition-colors">SaaS Product Engineering</a></li>
-              <li><a href="/#services" className="hover:text-artsy-yellow transition-colors">Mobile App Development</a></li>
-              <li><a href="/#services" className="hover:text-artsy-yellow transition-colors">UI/UX & Design Systems</a></li>
-              <li><a href="/#services" className="hover:text-artsy-yellow transition-colors">SEO & Growth Engine</a></li>
-              <li><a href="/#services" className="hover:text-artsy-yellow transition-colors">Brand Identity</a></li>
+              {serviceLinks.map((service) => (
+                <li key={service.href}>
+                  <Link href={service.href} className="hover:text-artsy-yellow transition-colors">
+                    {service.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
     template: "%s | Wixgo Agency",
-    default: "Wixgo Agency | Transforming Ideas into Digital Experiences",
+    default: siteConfig.title,
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,
@@ -48,38 +48,24 @@ export const metadata: Metadata = {
     },
   },
   alternates: { canonical: "/" },
-  keywords: [
-    "web development",
-    "SaaS product development",
-    "app development",
-    "SEO",
-    "UI/UX design",
-    "branding",
-    "digital agency",
-    "Sachin Rathore",
-    "Atharv Vyas",
-    "Wixgo",
-  ],
   openGraph: {
     type: "website",
     locale: "en_IN",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "Wixgo Agency | Transforming Ideas into Digital Experiences",
+    title: siteConfig.title,
     description: siteConfig.description,
     images: [
       {
         url: siteConfig.ogImage,
-        width: 1200,
-        height: 630,
-        alt: "Wixgo Agency — Transforming Ideas into Digital Experiences",
+        alt: "Sachin Rathore, Wixgo Agency co-founder",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wixgo Agency | Transforming Ideas into Digital Experiences",
-    description: "Websites, apps, SEO, UI/UX and branding for modern businesses.",
+    title: siteConfig.title,
+    description: siteConfig.description,
     images: [siteConfig.ogImage],
   },
 };
@@ -91,7 +77,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang={siteConfig.language}
       className={`${inter.variable} ${caveat.variable} ${spaceGrotesk.variable} dark`}
       suppressHydrationWarning
     >
