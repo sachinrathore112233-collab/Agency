@@ -55,14 +55,14 @@ export default function HeroSection() {
         {/* Big Chunky Doodle Box with Name & Sticker Notes */}
         <div className="relative mt-4 w-full flex flex-col items-center">
           {/* Sticker Notes (Top corners) */}
-          <div className="hidden sm:flex justify-between w-full max-w-2xl px-4 -mb-3 z-20 pointer-events-none">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:justify-between w-full max-w-2xl px-1 sm:px-4 -mb-3 z-20 pointer-events-none">
             <motion.div
               initial={{ scale: 1, rotate: -15 }}
               animate={{ scale: 1, rotate: -8 }}
               transition={{ delay: 0.2, type: "spring" }}
               className="pointer-events-auto"
             >
-              <span className="font-mono inline-block rounded-full border-2 border-white px-4 py-1 text-xs sm:text-sm font-bold uppercase tracking-wider text-white shadow-brutal bg-brand-purple">
+              <span className="font-mono inline-block rounded-full border-2 border-white px-2.5 sm:px-4 py-1 text-[10px] sm:text-sm font-bold uppercase tracking-wider text-white shadow-brutal bg-brand-purple">
                 ✦ Made Things
               </span>
             </motion.div>
@@ -73,7 +73,7 @@ export default function HeroSection() {
               transition={{ delay: 0.3, type: "spring" }}
               className="pointer-events-auto"
             >
-              <span className="font-mono inline-block rounded-full border-2 border-artsy-ink px-4 py-1 text-xs sm:text-sm font-bold uppercase tracking-wider text-artsy-ink shadow-brutal bg-artsy-yellow-soft">
+              <span className="font-mono inline-block rounded-full border-2 border-artsy-ink px-2.5 sm:px-4 py-1 text-[10px] sm:text-sm font-bold uppercase tracking-wider text-artsy-ink shadow-brutal bg-artsy-yellow-soft">
                 ⚡ Sweat Details
               </span>
             </motion.div>
