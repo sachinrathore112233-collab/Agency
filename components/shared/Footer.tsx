@@ -17,17 +17,22 @@ export default function Footer() {
             <span className="font-hand text-2xl text-artsy-yellow font-bold">
               ready to transform your brand? 🚀
             </span>
-            <h3 className="text-3xl sm:text-4xl font-bold text-white font-space">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white font-space">
               Take the first step toward building better.
-            </h3>
+            </h2>
             <p className="text-sm text-brand-muted max-w-lg">
               Partner directly with founders Sachin Rathore & Atharv Vyas. We reply in under 24 hours.
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-3 w-full lg:w-auto">
+            <label htmlFor="footer-email" className="sr-only">
+              Email address
+            </label>
             <input
+              id="footer-email"
               type="email"
+              autoComplete="email"
               placeholder="Enter your email..."
               className="w-full sm:w-72 px-5 py-3.5 rounded-full bg-brand-black border border-white/20 text-white text-sm placeholder:text-brand-muted focus:outline-none focus:border-artsy-yellow"
             />
@@ -65,24 +70,24 @@ export default function Footer() {
 
           {/* Col 2: Services */}
           <div>
-            <h4 className="font-mono text-xs font-bold uppercase tracking-widest text-white mb-4">
+            <h3 className="font-mono text-xs font-bold uppercase tracking-widest text-white mb-4">
               Services
-            </h4>
+            </h3>
             <ul className="space-y-2.5 text-xs text-brand-muted">
-              <li><a href="#services" className="hover:text-artsy-yellow transition-colors">Website Development</a></li>
-              <li><a href="#services" className="hover:text-artsy-yellow transition-colors">SaaS Product Engineering</a></li>
-              <li><a href="#services" className="hover:text-artsy-yellow transition-colors">Mobile App Development</a></li>
-              <li><a href="#services" className="hover:text-artsy-yellow transition-colors">UI/UX & Design Systems</a></li>
-              <li><a href="#services" className="hover:text-artsy-yellow transition-colors">SEO & Growth Engine</a></li>
-              <li><a href="#services" className="hover:text-artsy-yellow transition-colors">Brand Identity</a></li>
+              <li><a href="/#services" className="hover:text-artsy-yellow transition-colors">Website Development</a></li>
+              <li><a href="/#services" className="hover:text-artsy-yellow transition-colors">SaaS Product Engineering</a></li>
+              <li><a href="/#services" className="hover:text-artsy-yellow transition-colors">Mobile App Development</a></li>
+              <li><a href="/#services" className="hover:text-artsy-yellow transition-colors">UI/UX & Design Systems</a></li>
+              <li><a href="/#services" className="hover:text-artsy-yellow transition-colors">SEO & Growth Engine</a></li>
+              <li><a href="/#services" className="hover:text-artsy-yellow transition-colors">Brand Identity</a></li>
             </ul>
           </div>
 
           {/* Col 3: Agency & Founders */}
           <div>
-            <h4 className="font-mono text-xs font-bold uppercase tracking-widest text-white mb-4">
+            <h3 className="font-mono text-xs font-bold uppercase tracking-widest text-white mb-4">
               Founders
-            </h4>
+            </h3>
             <ul className="space-y-2.5 text-xs text-brand-muted">
               <li>
                 <a
@@ -111,7 +116,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="pt-2">
-                <a href="#founders" className="text-xs text-brand-violet hover:underline flex items-center gap-1">
+                  <a href="/#founders" className="text-xs text-brand-violet hover:underline flex items-center gap-1">
                   Meet both founders →
                 </a>
               </li>
@@ -120,9 +125,9 @@ export default function Footer() {
 
           {/* Col 4: Contact */}
           <div>
-            <h4 className="font-mono text-xs font-bold uppercase tracking-widest text-white mb-4">
+            <h3 className="font-mono text-xs font-bold uppercase tracking-widest text-white mb-4">
               Contact Us
-            </h4>
+            </h3>
             <ul className="space-y-2.5 text-xs text-brand-muted">
               <li className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-artsy-yellow" />
@@ -165,9 +170,9 @@ export default function Footer() {
             © {new Date().getFullYear()} Wixgo Agency. Co-founded by Sachin Rathore & Atharv Vyas.
           </p>
           <div className="flex items-center gap-6">
-            <a href="#founders" className="hover:text-white transition-colors">About Us</a>
-            <a href="#portfolio" className="hover:text-white transition-colors">Case Studies</a>
-            <a href="#contact" className="hover:text-white transition-colors">Get in touch</a>
+            <Link href="/about" className="hover:text-white transition-colors">About Us</Link>
+            <a href="/#portfolio" className="hover:text-white transition-colors">Case Studies</a>
+            <a href="/#contact" className="hover:text-white transition-colors">Get in touch</a>
           </div>
         </div>
       </div>

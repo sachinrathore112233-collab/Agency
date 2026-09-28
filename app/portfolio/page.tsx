@@ -1,12 +1,13 @@
-import type { Metadata } from "next";
 import PortfolioSection from "@/components/sections/PortfolioSection";
 import CTABanner from "@/components/sections/CTABanner";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Portfolio",
+export const metadata = createPageMetadata({
+  title: "Our Work & Portfolio",
   description:
-    "Explore Wixgo Agency's portfolio — stunning websites, mobile apps, SEO campaigns, and brand identities we've built for our clients.",
-};
+    "Explore Wixgo Agency's selected digital projects, websites, applications, interfaces, and branding work.",
+  pathname: "/portfolio",
+});
 
 export default function PortfolioPage() {
   return (

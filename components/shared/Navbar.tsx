@@ -7,11 +7,11 @@ import { Menu, X, Zap, ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "Work", href: "#portfolio" },
-  { label: "Founders", href: "#founders" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
+  { label: "Services", href: "/#services" },
+  { label: "Work", href: "/#portfolio" },
+  { label: "Founders", href: "/#founders" },
+  { label: "Testimonials", href: "/#testimonials" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Navbar() {
@@ -54,13 +54,13 @@ export default function Navbar() {
             {/* Desktop Nav Links */}
             <nav className="hidden md:flex items-center gap-1 px-4 py-1.5 rounded-full bg-black/[0.04] dark:bg-brand-dark/80 border border-black/10 dark:border-white/10 backdrop-blur-md shadow-sm">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.label}
                   href={link.href}
                   className="px-3.5 py-1.5 rounded-full text-xs font-mono font-bold uppercase tracking-wider text-brand-darkMuted dark:text-brand-muted hover:text-artsy-ink dark:hover:text-artsy-yellow hover:bg-black/[0.06] dark:hover:bg-white/[0.05] transition-all"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </nav>
 
@@ -87,7 +87,9 @@ export default function Navbar() {
               <button
                 className="md:hidden relative w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-xl bg-black/[0.05] dark:bg-brand-dark border-2 border-artsy-ink/30 dark:border-white/20 text-artsy-ink dark:text-white hover:border-artsy-yellow shrink-0"
                 onClick={() => setMobileOpen(!mobileOpen)}
-                aria-label="Toggle menu"
+                aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
+                aria-expanded={mobileOpen}
+                aria-controls={mobileOpen ? "mobile-navigation" : undefined}
               >
                 {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
@@ -103,6 +105,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
+            id="mobile-navigation"
             className="fixed inset-0 z-40 flex flex-col justify-between px-4 pt-20 pb-6 md:hidden overflow-y-auto bg-brand-black text-white"
             style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px)", backgroundSize: "32px 32px" }}
           >
@@ -122,9 +125,9 @@ export default function Navbar() {
                 </button>
               </div>
 
-              <div className="flex flex-col gap-1 pt-2">
+              <nav aria-label="Mobile navigation" className="flex flex-col gap-1 pt-2">
                 {navLinks.map((link) => (
-                  <a
+                  <Link
                     key={link.label}
                     href={link.href}
                     onClick={() => setMobileOpen(false)}
@@ -132,9 +135,9 @@ export default function Navbar() {
                   >
                     <span>{link.label}</span>
                     <ArrowUpRight className="h-5 w-5 opacity-60 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-                  </a>
+                  </Link>
                 ))}
-              </div>
+              </nav>
             </div>
 
             <div className="space-y-4 pt-6">

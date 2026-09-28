@@ -1,15 +1,16 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, Target, Heart, Lightbulb, Users, Sparkles } from "lucide-react";
 import FoundersSection from "@/components/sections/FoundersSection";
 import HavenlyDialSection from "@/components/sections/HavenlyDialSection";
 import CTABanner from "@/components/sections/CTABanner";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "About",
   description:
-    "Learn about Wixgo Agency — founded by Sachin Rathore & Atharv Vyas. We build world-class websites, apps, SaaS products, SEO growth, and iconic brands.",
-};
+    "Learn about Wixgo Agency, our approach to digital products, creative technology, design, development, and building meaningful digital experiences.",
+  pathname: "/about",
+});
 
 const values = [
   {

@@ -70,7 +70,7 @@ export default function CTABanner() {
               </Link>
 
               <Link
-                href="#portfolio"
+                href="/#portfolio"
                 className="inline-flex items-center gap-2 rounded-full border-[3px] border-white/80 bg-white/10 px-8 py-4 text-sm font-mono font-black uppercase tracking-[0.18em] text-white transition-all duration-200 hover:bg-white hover:text-artsy-ink"
               >
                 See Our Work ✦

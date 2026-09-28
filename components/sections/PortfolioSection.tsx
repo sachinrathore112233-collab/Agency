@@ -175,7 +175,7 @@ export default function PortfolioSection() {
 
                     <div>
                       <Link
-                        href="#contact"
+                        href="/#contact"
                         className="font-mono inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white text-artsy-ink text-xs sm:text-sm font-black uppercase tracking-wider hover:bg-artsy-yellow transition-all shadow-brutal-sm"
                       >
                         Start Similar Project
@@ -220,7 +220,7 @@ export default function PortfolioSection() {
         {/* Bottom CTA with 100% visible text */}
         <div className="text-center mt-16 sm:mt-24">
           <Link
-            href="#contact"
+            href="/#contact"
             className="font-mono inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-artsy-yellow text-artsy-ink text-xs sm:text-sm font-black uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-brutal border-2 border-artsy-ink"
           >
             <span>Have a project in mind? Let&apos;s build it</span>

@@ -150,7 +150,7 @@ export default function ServicesSection() {
               {/* Bottom Action */}
               <div className="pt-4 border-t border-white/[0.08]">
                 <Link
-                  href="#contact"
+                  href="/#contact"
                   className="font-mono inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-white group-hover:text-artsy-yellow transition-colors"
                 >
                   Start with this service

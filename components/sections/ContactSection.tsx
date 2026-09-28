@@ -138,7 +138,7 @@ export default function ContactSection() {
           <div className="lg:col-span-7">
             <div className="p-8 sm:p-10 rounded-3xl bg-brand-dark border-2 border-white/10 shadow-brutal-lg">
               {status === "success" ? (
-                <div className="py-12 flex flex-col items-center text-center space-y-4">
+                <div role="status" aria-live="polite" className="py-12 flex flex-col items-center text-center space-y-4">
                   <div className="w-20 h-20 rounded-full bg-artsy-lime/20 border-2 border-artsy-lime flex items-center justify-center text-artsy-lime">
                     <CheckCircle2 className="w-10 h-10" />
                   </div>
@@ -160,10 +160,11 @@ export default function ContactSection() {
                   {/* Name & Email */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div className="space-y-1.5">
-                      <label className="font-mono text-xs font-bold uppercase tracking-wider text-brand-muted">
+                      <label htmlFor="contact-name" className="font-mono text-xs font-bold uppercase tracking-wider text-brand-muted">
                         Your Name *
                       </label>
                       <input
+                        id="contact-name"
                         type="text"
                         required
                         placeholder="John Doe"
@@ -174,10 +175,11 @@ export default function ContactSection() {
                     </div>
 
                     <div className="space-y-1.5">
-                      <label className="font-mono text-xs font-bold uppercase tracking-wider text-brand-muted">
+                      <label htmlFor="contact-email" className="font-mono text-xs font-bold uppercase tracking-wider text-brand-muted">
                         Email Address *
                       </label>
                       <input
+                        id="contact-email"
                         type="email"
                         required
                         placeholder="john@startup.com"
@@ -190,14 +192,15 @@ export default function ContactSection() {
 
                   {/* Service Pills */}
                   <div className="space-y-2">
-                    <label className="font-mono text-xs font-bold uppercase tracking-wider text-brand-muted">
+                    <p id="service-options-label" className="font-mono text-xs font-bold uppercase tracking-wider text-brand-muted">
                       What are you looking to build?
-                    </label>
-                    <div className="flex flex-wrap gap-2">
+                    </p>
+                    <div role="group" aria-labelledby="service-options-label" className="flex flex-wrap gap-2">
                       {serviceOptions.map((opt) => (
                         <button
                           type="button"
                           key={opt}
+                          aria-pressed={formData.service === opt}
                           onClick={() => setFormData({ ...formData, service: opt })}
                           className={`px-3.5 py-1.5 rounded-full text-xs font-mono font-medium transition-all ${
                             formData.service === opt
@@ -213,14 +216,15 @@ export default function ContactSection() {
 
                   {/* Budget Options */}
                   <div className="space-y-2">
-                    <label className="font-mono text-xs font-bold uppercase tracking-wider text-brand-muted">
+                    <p id="budget-options-label" className="font-mono text-xs font-bold uppercase tracking-wider text-brand-muted">
                       Estimated Budget Range
-                    </label>
-                    <div className="flex flex-wrap gap-2">
+                    </p>
+                    <div role="group" aria-labelledby="budget-options-label" className="flex flex-wrap gap-2">
                       {budgetOptions.map((b) => (
                         <button
                           type="button"
                           key={b}
+                          aria-pressed={formData.budget === b}
                           onClick={() => setFormData({ ...formData, budget: b })}
                           className={`px-3.5 py-1.5 rounded-full text-xs font-mono font-medium transition-all ${
                             formData.budget === b
@@ -236,10 +240,11 @@ export default function ContactSection() {
 
                   {/* Message */}
                   <div className="space-y-1.5">
-                    <label className="font-mono text-xs font-bold uppercase tracking-wider text-brand-muted">
+                    <label htmlFor="contact-message" className="font-mono text-xs font-bold uppercase tracking-wider text-brand-muted">
                       Tell us about your project & goals *
                     </label>
                     <textarea
+                      id="contact-message"
                       required
                       rows={4}
                       placeholder="Share your timeline, vision, design inspiration, or what problem you're solving..."

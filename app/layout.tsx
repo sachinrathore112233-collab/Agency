@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { MotionConfig } from "framer-motion";
 import { Inter, Caveat, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
+import { siteConfig } from "@/lib/seo";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,12 +26,28 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
     template: "%s | Wixgo Agency",
-    default: "Wixgo Agency — Creative Digital & SaaS Product Studio",
+    default: "Wixgo Agency | Transforming Ideas into Digital Experiences",
   },
-  description:
-    "Founded by Sachin Rathore & Atharv Vyas. Wixgo Agency delivers cutting-edge Website Development, SaaS Products, App Development, SEO, UI/UX Design, and Brand Identity.",
+  description: siteConfig.description,
+  applicationName: siteConfig.name,
+  authors: [{ name: siteConfig.name }],
+  creator: siteConfig.name,
+  publisher: siteConfig.name,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  alternates: { canonical: "/" },
   keywords: [
     "web development",
     "SaaS product development",
@@ -45,17 +63,24 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://wixgo.agency",
-    siteName: "Wixgo Agency",
-    title: "Wixgo Agency — Creative Digital & SaaS Product Studio",
-    description:
-      "Crafted by Sachin Rathore & Atharv Vyas. High-impact websites, apps, SaaS products, SEO & branding.",
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    title: "Wixgo Agency | Transforming Ideas into Digital Experiences",
+    description: siteConfig.description,
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: "Wixgo Agency — Transforming Ideas into Digital Experiences",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wixgo Agency — Creative Digital & SaaS Studio",
-    description:
-      "Transform your digital presence with world-class web development, apps, SaaS products, SEO, UI/UX & branding.",
+    title: "Wixgo Agency | Transforming Ideas into Digital Experiences",
+    description: "Websites, apps, SEO, UI/UX and branding for modern businesses.",
+    images: [siteConfig.ogImage],
   },
 };
 
@@ -88,9 +113,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <MotionConfig reducedMotion="user">
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </MotionConfig>
       </body>
     </html>
   );
