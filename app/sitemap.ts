@@ -3,6 +3,7 @@ import { services } from "@/data/services";
 import { siteConfig } from "@/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const lastModified = new Date();
   const routes = [
     { pathname: "/", priority: 1 },
     { pathname: "/services", priority: 0.9 },
@@ -13,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return routes.map(({ pathname, priority }) => ({
     url: new URL(pathname, siteConfig.url).toString(),
+    lastModified,
     changeFrequency: "monthly",
     priority,
   }));

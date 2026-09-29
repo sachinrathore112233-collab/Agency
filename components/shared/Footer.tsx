@@ -141,7 +141,7 @@ export default function Footer() {
             <ul className="space-y-2.5 text-xs text-brand-muted">
               <li className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-artsy-yellow" />
-                hello@wixgo.agency
+                hello@wixgo.in
               </li>
               <li>
                 <a

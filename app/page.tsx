@@ -14,6 +14,7 @@ const organizationSchema = {
   name: siteConfig.name,
   url: siteConfig.url,
   description: siteConfig.description,
+  logo: `${siteConfig.url}/images/wixgo-mark.svg`,
   founder: [
     {
       "@type": "Person",

@@ -199,7 +199,7 @@ Developer → Push to GitHub
   → Runs: npm run build
   → Generates: Static HTML + JS bundles
   → Deploys to: Vercel Edge Network (CDN)
-  → Live at: wixgo.agency (custom domain)
+  → Live at: wixgo.in (custom domain)
 ```
 
 ---
@@ -208,7 +208,7 @@ Developer → Push to GitHub
 
 ```bash
 # .env.local (if needed for contact form)
-NEXT_PUBLIC_SITE_URL=https://wixgo.agency
-NEXT_PUBLIC_CONTACT_EMAIL=hello@wixgo.agency
+NEXT_PUBLIC_SITE_URL=https://www.wixgo.in
+NEXT_PUBLIC_CONTACT_EMAIL=hello@wixgo.in
 # (No database or backend credentials needed)
 ```

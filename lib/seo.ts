@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 export const siteConfig = {
   name: "Wixgo Agency",
   title: "Wixgo Agency | Website Development, Apps & SEO",
-  url: "https://wixgo.agency",
+  url: "https://www.wixgo.in",
   language: "en-IN",
   description:
-    "Wixgo Agency builds custom websites, web and mobile apps, and SaaS products, with SEO, UI/UX design, and branding for businesses.",
-  email: "hello@wixgo.agency",
+    "Wixgo Agency designs and builds fast websites, SaaS products, and mobile apps, with SEO, UI/UX design, and branding for ambitious businesses across India.",
+  email: "hello@wixgo.in",
   telephone: "+91 91796 68341",
   ogImage: "/images/founders/sachin-rathore.png",
 };
