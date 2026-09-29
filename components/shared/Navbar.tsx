@@ -2,9 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ArrowUpRight } from "lucide-react";
+import { Menu, X, Zap, ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -39,8 +38,8 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             {/* Brand Logo */}
             <Link href="/" className="flex items-center gap-2 sm:gap-2.5 group shrink-0">
-              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-brand-dark flex items-center justify-center border-2 border-white/15 shadow-brutal-sm group-hover:rotate-6 transition-transform">
-                <Image src="/images/wixgo-mark.svg" alt="" width={40} height={40} className="h-full w-full object-contain" />
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-artsy-yellow text-artsy-ink flex items-center justify-center border-2 border-artsy-ink shadow-brutal-sm group-hover:rotate-6 transition-transform">
+                <Zap className="w-5 h-5 fill-current" />
               </div>
               <div className="flex flex-col">
                 <span className="text-lg sm:text-2xl font-black tracking-tight font-space text-artsy-ink dark:text-white leading-none">
