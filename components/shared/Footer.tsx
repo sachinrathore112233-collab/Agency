@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Zap, ArrowUpRight, Github, Linkedin, Twitter, Mail, Phone, MapPin, Heart } from "lucide-react";
+import Image from "next/image";
+import { ArrowUpRight, Github, Linkedin, Twitter, Mail, Phone, MapPin, Heart } from "lucide-react";
 
 const serviceLinks = [
   { label: "Website Development", href: "/services/web-development" },
@@ -60,8 +61,8 @@ export default function Footer() {
           {/* Col 1: Brand Info */}
           <div className="col-span-2 sm:col-span-1 space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-artsy-yellow text-artsy-ink flex items-center justify-center border border-artsy-ink shadow-sm">
-                <Zap className="w-4 h-4 fill-current" />
+              <div className="w-8 h-8 rounded-lg bg-brand-dark flex items-center justify-center border border-white/15 shadow-sm">
+                <Image src="/images/wixgo-mark.svg" alt="" width={32} height={32} className="h-full w-full object-contain" />
               </div>
               <span className="text-xl font-black font-space text-white">
                 WIX<span className="text-artsy-yellow">GO</span>
