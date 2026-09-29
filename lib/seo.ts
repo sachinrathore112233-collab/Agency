@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
 export const siteConfig = {
-  name: "Wixgo Agency",
-  title: "Wixgo Agency | Website Development, Apps & SEO",
+  name: "Wixgo",
+  title: "Wixgo | Website Development, App Development & AI Automation",
   url: "https://www.wixgo.in",
   language: "en-IN",
   description:
-    "Wixgo Agency designs and builds fast websites, SaaS products, and mobile apps, with SEO, UI/UX design, and branding for ambitious businesses across India.",
+    "Wixgo is a digital agency in Indore, India offering website development, app development, AI automation, SaaS development, SEO, UI/UX design and branding for modern businesses.",
   email: "hello@wixgo.in",
   telephone: "+91 91796 68341",
   ogImage: "/images/founders/sachin-rathore.png",

@@ -28,9 +28,9 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    template: "%s | Wixgo Agency",
-    default: siteConfig.title,
-  },
+  template: "%s | Wixgo",
+  default: siteConfig.title,
+},
   description: siteConfig.description,
   applicationName: siteConfig.name,
   authors: [{ name: siteConfig.name }],
