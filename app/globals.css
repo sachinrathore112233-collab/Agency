@@ -68,6 +68,172 @@ html.dark {
   }
 }
 
+.wixgo-preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  background: #0B0F17;
+  overflow: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.wixgo-preloader::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(245, 231, 47, 0.08), transparent 42%);
+  pointer-events: none;
+}
+
+.wixgo-preloader__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.wixgo-preloader__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  opacity: 0;
+  transform: translateY(10px) scale(0.92);
+  animation: wixgoPreloaderBrandIn 620ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.wixgo-preloader__logo-wrap {
+  width: clamp(68px, 10vw, 104px);
+  height: clamp(68px, 10vw, 104px);
+  display: grid;
+  place-items: center;
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: 0 0 40px rgba(245, 231, 47, 0.08);
+}
+
+.wixgo-preloader__logo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 0 14px rgba(245, 231, 47, 0.16));
+}
+
+.wixgo-preloader__wordmark {
+  font-size: clamp(1.5rem, 2.4vw, 2.6rem);
+  letter-spacing: 0.26em;
+  font-weight: 800;
+  font-family: var(--font-space), sans-serif;
+  color: #F5F7FA;
+  opacity: 0;
+  transform: translateY(8px);
+  animation: wixgoPreloaderWordmarkIn 620ms cubic-bezier(0.22, 1, 0.36, 1) 110ms forwards;
+}
+
+.wixgo-preloader__status {
+  width: min(220px, 70vw);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-space), sans-serif;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: wixgoPreloaderFadeIn 420ms ease-out 220ms forwards;
+}
+
+.wixgo-preloader__label {
+  font-size: 0.62rem;
+  color: #A7B0C0;
+}
+
+.wixgo-preloader__percent {
+  font-size: 0.66rem;
+  color: #F5F7FA;
+  font-weight: 700;
+}
+
+.wixgo-preloader__bar {
+  width: min(220px, 70vw);
+  height: 2px;
+  background: rgba(245, 247, 250, 0.1);
+  border-radius: 999px;
+  overflow: hidden;
+  opacity: 0;
+  animation: wixgoPreloaderFadeIn 420ms ease-out 260ms forwards;
+}
+
+.wixgo-preloader__fill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #F5E72F 0%, #F5E72F 100%);
+  box-shadow: 0 0 18px rgba(245, 231, 47, 0.18);
+  transition: width 120ms linear;
+}
+
+@keyframes wixgoPreloaderBrandIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.92);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes wixgoPreloaderWordmarkIn {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes wixgoPreloaderFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .wixgo-preloader__status,
+  .wixgo-preloader__bar {
+    width: min(170px, 70vw);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wixgo-preloader__brand,
+  .wixgo-preloader__wordmark,
+  .wixgo-preloader__status,
+  .wixgo-preloader__bar {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .wixgo-preloader {
+    transition: opacity 0.15s ease;
+  }
+}
+
 @layer utilities {
   .font-hand {
     font-family: var(--font-caveat), cursive, sans-serif;

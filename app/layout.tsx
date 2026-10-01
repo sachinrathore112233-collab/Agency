@@ -5,6 +5,7 @@ import { Inter, Caveat, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
+import WixgoPreloader from "@/components/shared/WixgoPreloader";
 import { siteConfig } from "@/lib/seo";
 
 const inter = Inter({
@@ -100,6 +101,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           />
         </noscript>
         <MotionConfig reducedMotion="user">
+          <WixgoPreloader />
           <Navbar />
           <main>{children}</main>
           <Footer />
