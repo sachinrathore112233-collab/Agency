@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { Zap } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const STORAGE_KEY = "wixgo-preloader-shown";
@@ -81,15 +81,14 @@ export default function WixgoPreloader() {
       <div className="wixgo-preloader__inner">
         <div className="wixgo-preloader__brand" aria-label="Wixgo Digital Studio">
           <div className="wixgo-preloader__logo-wrap">
-            <Image
-              src="/images/wixgo-mark.svg"
-              alt="Wixgo logo"
-              width={120}
-              height={120}
-              priority
-            />
+            <Zap className="wixgo-preloader__logo-icon" aria-hidden="true" />
           </div>
-          <div className="wixgo-preloader__wordmark">WIXGO</div>
+          <div className="wixgo-preloader__wordmark">
+            <span className="wixgo-preloader__name">
+              WIX<span>GO</span>
+            </span>
+            <span className="wixgo-preloader__tagline">Digital Studio</span>
+          </div>
         </div>
 
         <div className="wixgo-preloader__status" aria-live="polite">
