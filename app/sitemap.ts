@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     { pathname: "/", priority: 1 },
     { pathname: "/services", priority: 0.9 },
+    { pathname: "/packages", priority: 0.9 },
     ...services.map((service) => ({ pathname: service.href, priority: 0.8 })),
     { pathname: "/portfolio", priority: 0.8 },
     { pathname: "/about", priority: 0.7 },

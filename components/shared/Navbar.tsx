@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 
 const navLinks = [
   { label: "Services", href: "/#services" },
+  { label: "Packages", href: "/packages" },
   { label: "Work", href: "/#portfolio" },
   { label: "Founders", href: "/#founders" },
   { label: "Testimonials", href: "/#testimonials" },
@@ -66,12 +67,6 @@ export default function Navbar() {
 
             {/* CTA + Mobile Button */}
             <div className="flex items-center gap-2 sm:gap-3.5">
-              {/* Status pill (Desktop only) */}
-              <div className="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 text-xs font-mono font-medium">
-                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                Available Q1/Q2
-              </div>
-
               {/* Action Button - Always crisp and high contrast */}
               <a
                 href="https://wa.me/919179668341?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20project"

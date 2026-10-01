@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Wixgo Packages: Build Your Next Digital Product</title>
+  <desc id="description">Website, app, web application, and AI development packages from Wixgo Digital Studio.</desc>
+  <rect width="1200" height="630" fill="#08080C"/>
+  <rect x="64" y="54" width="44" height="44" rx="10" fill="#2563EB"/>
+  <path d="M75 67h5l4 17 5-12 5 12 4-17h5l-7 25h-4l-5-12-5 12h-4z" fill="#F8F8FF"/>
+  <text x="124" y="75" fill="#F8F8FF" font-family="Arial, sans-serif" font-size="22" font-weight="700">WIXGO</text>
+  <text x="124" y="94" fill="#9CA3AF" font-family="Arial, sans-serif" font-size="10" letter-spacing="1.5">DIGITAL STUDIO</text>
+  <text x="64" y="212" fill="#60A5FA" font-family="Arial, sans-serif" font-size="15" font-weight="700">BUILD WITH WIXGO</text>
+  <text x="64" y="291" fill="#F8F8FF" font-family="Arial, sans-serif" font-size="58" font-weight="700">Build Your Next</text>
+  <text x="64" y="357" fill="#F8F8FF" font-family="Arial, sans-serif" font-size="58" font-weight="700">Digital Product</text>
+  <text x="64" y="405" fill="#9CA3AF" font-family="Arial, sans-serif" font-size="19">Websites / Mobile apps / Web applications / AI products</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="64" y="478" width="336" height="94" rx="12" fill="#111118" stroke="#FFFFFF" stroke-opacity=".14"/>
+    <text x="88" y="516" fill="#60A5FA" font-size="14" font-weight="700">LAUNCH</text>
+    <text x="88" y="547" fill="#F8F8FF" font-size="20" font-weight="700">From ₹19,999</text>
+    <rect x="432" y="478" width="336" height="94" rx="12" fill="#111118" stroke="#FFFFFF" stroke-opacity=".14"/>
+    <text x="456" y="516" fill="#60A5FA" font-size="14" font-weight="700">BUSINESS</text>
+    <text x="456" y="547" fill="#F8F8FF" font-size="20" font-weight="700">From ₹79,999</text>
+    <rect x="800" y="478" width="336" height="94" rx="12" fill="#111118" stroke="#FFFFFF" stroke-opacity=".14"/>
+    <text x="824" y="516" fill="#60A5FA" font-size="14" font-weight="700">SCALE</text>
+    <text x="824" y="547" fill="#F8F8FF" font-size="20" font-weight="700">From ₹1,49,999</text>
+  </g>
+</svg>
