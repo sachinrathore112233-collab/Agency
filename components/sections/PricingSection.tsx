@@ -378,52 +378,6 @@ export default function PricingSection() {
             </table>
           </div>
         </div>
-
-        <motion.div
-          initial={shouldReduceMotion ? false : { opacity: 0, y: 16 }}
-          whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.25 }}
-          transition={{ duration: 0.5 }}
-          className="mt-20 rounded-[2rem] border border-white/10 bg-brand-black px-6 py-10 sm:mt-24 sm:px-8 sm:py-12 lg:px-12 lg:py-14"
-        >
-          <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-            <div className="flex-1">
-              <p className="font-hand text-3xl font-bold tracking-wide text-artsy-yellow sm:text-4xl lg:text-5xl">
-                ready to transform your brand?
-              </p>
-
-              <h2 className="mt-6 max-w-4xl font-space text-4xl font-extrabold leading-[0.95] tracking-[-0.04em] text-white sm:text-5xl lg:text-7xl">
-                Take the first step toward building better.
-              </h2>
-
-              <p className="mt-6 max-w-2xl text-base leading-relaxed text-brand-muted sm:text-lg">
-                Partner directly with founders Sachin Rathore & Atharv Vyas. We reply in under 24 hours.
-              </p>
-            </div>
-
-            <div className="flex w-full max-w-xl flex-col gap-3 sm:flex-row lg:justify-end">
-              <div className="flex-1 rounded-full border border-white/15 bg-white/5 px-5 py-4 text-left text-base text-white/70 shadow-inner shadow-white/5">
-                <span className="font-medium text-white/40">Enter your email...</span>
-              </div>
-
-              <Link
-                href="/#contact"
-                className="group inline-flex min-h-[64px] items-center justify-center gap-2 rounded-full bg-artsy-yellow px-6 py-3 text-sm font-black uppercase tracking-[0.12em] text-artsy-ink transition-transform hover:translate-y-[-1px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-artsy-yellow"
-              >
-                Get in touch
-                <ArrowRight
-                  aria-hidden="true"
-                  className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1"
-                />
-              </Link>
-            </div>
-          </div>
-        </motion.div>
-
-        <p className="mt-6 text-center text-xs leading-relaxed text-brand-muted">
-          Starting prices are indicative and may vary based on project scope,
-          features, integrations and technical requirements.
-        </p>
       </div>
     </section>
   );
